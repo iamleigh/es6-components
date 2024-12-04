@@ -1,1 +1,1 @@
-# es6-components
+# ES6 Sidebar
