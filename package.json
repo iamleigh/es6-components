@@ -19,8 +19,8 @@
   },
   "homepage": "https://github.com/iamleigh/es6-components#readme",
   "scripts": {
-	"dev": "npm run tokens && gulp watch",
-	"prod": "npm run tokens && gulp deploy",
+	"dev": "gulp watch",
+	"prod": "gulp deploy",
 	"start": "live-server --port=8080 --host=localhost",
     "test": "gulp a11y"
   },
