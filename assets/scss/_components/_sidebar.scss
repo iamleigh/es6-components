@@ -75,5 +75,31 @@
 
 	@include modifier(closed) {
 		width: $sidebar-closed;
+
+		.lq-toggle {
+			transform: rotate(180deg);
+		}
+
+		.lq-title,
+		.lq-sidebar__nav button span:last-child {
+			width: 1px;
+			height: 1px;
+			overflow: hidden;
+			clip: rect(1px, 1px, 1px, 1px);
+			clip-path: inset(50%);
+			position: absolute !important;
+			margin: -1px;
+			padding: 0;
+			border: 0;
+			word-wrap: normal !important;
+		}
+
+		.lq-search {
+			pointer-events: none;
+
+			.lq-search__input {
+				padding-left: 30px;
+			}
+		}
 	}
 }
