@@ -1,7 +1,8 @@
 {
   "private": true,
-  "name": "es6-components",
-  "description": "Collection of components built with HTML, CSS and JavaScript (ES6)",
+  "name": "@iamleigh/es6-sidebar",
+  "description": "Sidebar components built with HTML, CSS and JavaScript (ES6)",
+  "main": "index.html",
   "license": "MIT",
   "keywords": [],
   "author": {
