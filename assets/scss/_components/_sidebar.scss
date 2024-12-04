@@ -6,5 +6,74 @@
 /// @author Leighton Quito (iamleigh.com)
 /// -----------------------------------------------------------------------------
 @include block(sidebar) {
+	width: $sidebar-open;
+	position: absolute;
+	top: $spacing-base;
+	left: $spacing-base;
+	bottom: $spacing-base;
 	background: $color-secondary;
+	border-radius: $border-radius;
+
+	@include element(header) {
+		display: flex;
+		align-items: center;
+		padding: 23px 18px;
+		border-radius: 8px 8px 0 0;
+		background: shade($color-secondary, 20%);
+
+		.lq-logo {
+			flex: 0 0 auto;
+		}
+
+		.lq-title {
+			flex: 1;
+		}
+	}
+
+	@include element(content) {
+		padding: 20px 10px;
+
+		.lq-search {
+			margin-bottom: 20px;
+		}
+	}
+
+	@include element(nav) {
+		display: flex;
+		flex-direction: column;
+
+		button {
+			cursor: pointer;
+			margin: 0 -10px;
+			padding: 18px 22px;
+			border: 0;
+			display: flex;
+			align-items: center;
+			background: transparent;
+			color: tint($color-secondary, 40%);
+			font-size: 1rem;
+			line-height: 1.2rem;
+			text-align: left;
+
+			// Element: Button Icon
+			span:first-child {
+				flex: 0 0 auto;
+				font-size: 1.25rem;
+			}
+
+			// Element: Button Label
+			span:last-child {
+				flex: 1;
+				margin-left: 19px;
+			}
+
+			&:hover {
+				color: $color-neutral;
+			}
+		}
+	}
+
+	@include modifier(closed) {
+		width: $sidebar-closed;
+	}
 }

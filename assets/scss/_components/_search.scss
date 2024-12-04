@@ -1,0 +1,32 @@
+@use "../_utils/utils" as *;
+
+/// -----------------------------------------------------------------------------
+/// 🟢 Logo
+///
+/// @author Leighton Quito (iamleigh.com)
+/// -----------------------------------------------------------------------------
+@include block(search) {
+	position: relative;
+
+	@include element(icon) {
+		position: absolute;
+		top: 50%;
+		left: 12px;
+		transform: translateY(-50%);
+		color: tint($color-secondary, 40%);
+		font-size: 20px;
+	}
+
+	@include element(input) {
+		width: 100%;
+		margin: 0;
+		padding: 13px;
+		padding-left: 44px;
+		border: 0;
+		border-radius: $border-radius;
+		background: tint($color-secondary, 10%);
+		color: $color-neutral;
+		font-size: 1rem;
+		line-height: 1.2rem;
+	}
+}
