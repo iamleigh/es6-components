@@ -2,7 +2,7 @@
   "private": true,
   "name": "es6-components",
   "description": "Collection of components built with HTML, CSS and JavaScript (ES6)",
-  "license": "ISC",
+  "license": "MIT",
   "keywords": [],
   "author": {
     "name": "Leighton Quito",
