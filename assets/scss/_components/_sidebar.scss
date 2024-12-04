@@ -67,8 +67,13 @@
 				margin-left: 19px;
 			}
 
-			&:hover {
+			&:hover,
+			&.active {
 				color: $color-neutral;
+			}
+
+			&.active {
+				pointer-events: none;
 			}
 		}
 	}
